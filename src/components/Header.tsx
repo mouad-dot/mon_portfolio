@@ -32,11 +32,20 @@ const Header = () => {
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
+          {/* Logo/Nom - Masqué sur mobile pour éviter le conflit */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+            className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent hidden md:block"
           >
             Mouad Maafi
+          </motion.div>
+
+          {/* Logo simplifié pour mobile */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent md:hidden"
+          >
+            MM
           </motion.div>
 
           {/* Desktop Navigation */}

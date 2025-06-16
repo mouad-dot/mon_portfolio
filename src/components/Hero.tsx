@@ -26,7 +26,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="accueil" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="accueil" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-0">
       {/* Background Animation */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -inset-10 opacity-50">
@@ -62,8 +62,8 @@ const Hero = () => {
           animate="visible"
           className="max-w-4xl mx-auto"
         >
-          <motion.div variants={itemVariants} className="mb-8">
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-400 to-purple-500 p-1">
+          <motion.div variants={itemVariants} className="mb-6 md:mb-8">
+            <div className="w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 md:mb-6 rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-400 to-purple-500 p-1">
               <div className="w-full h-full rounded-full overflow-hidden">
                 <img 
                   src="/me.jpeg" 
@@ -76,7 +76,7 @@ const Hero = () => {
 
           <motion.h1 
             variants={itemVariants}
-            className="text-5xl md:text-7xl font-bold mb-6"
+            className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6"
           >
             👋 Salut, je suis{' '}
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -86,30 +86,30 @@ const Hero = () => {
 
           <motion.p 
             variants={itemVariants}
-            className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
+            className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 md:mb-8 leading-relaxed px-4"
           >
             Passionné d'<span className="text-blue-400 font-semibold">intelligence artificielle</span>, 
             explorateur d'idées et créateur de solutions concrètes.
-            <br />
+            <br className="hidden md:block" />
             Je construis des projets autour de la donnée, de l'IA et de la technologie intelligente.
           </motion.p>
 
           <motion.p 
             variants={itemVariants}
-            className="text-lg text-gray-400 mb-12"
+            className="text-base md:text-lg text-gray-400 mb-8 md:mb-12 px-4"
           >
             Ensemble, transformons des idées en actions.
           </motion.p>
 
           <motion.div 
             variants={itemVariants}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 md:mb-12 px-4"
           >
             <motion.a
               href="#projets"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
+              className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 md:px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 text-center"
             >
               Découvrir mes projets
             </motion.a>
@@ -119,7 +119,7 @@ const Hero = () => {
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="border border-gray-600 text-gray-300 px-8 py-3 rounded-full font-semibold hover:bg-gray-800 hover:border-gray-500 transition-all duration-300 flex items-center gap-2"
+              className="w-full sm:w-auto border border-gray-600 text-gray-300 px-6 md:px-8 py-3 rounded-full font-semibold hover:bg-gray-800 hover:border-gray-500 transition-all duration-300 flex items-center justify-center gap-2"
             >
               <Download size={20} />
               Télécharger CV
@@ -162,7 +162,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden md:block"
         >
           <motion.div
             animate={{ y: [0, 10, 0] }}
