@@ -132,7 +132,7 @@ MIT License - See [LICENSE](LICENSE) for details
 **Mouad Maafi**  
 AI Engineering Student | Computer Vision & Deep Learning
 
-- 🌐 Portfolio: [mouadmaafi-portfolio.vercel.app](https://mouadmaafi-portfolio.vercel.app)
+- 🌐 Portfolio: [mouadmaafi-portfolio.vercel.app](https://mouad-maafi.vercel.app/)
 - 💼 LinkedIn: [Mouad Maafi](https://www.linkedin.com/in/mouad-m-370814310/)
 - 🐙 GitHub: [@mouad-dot](https://github.com/mouad-dot)
 - 📧 Email: mouadmaafi1@gmail.com
