@@ -8,7 +8,7 @@
 
 > Modern, performant, and bilingual portfolio showcasing AI/ML projects with measurable results
 
-**Live:** [mouadmaafi-portfolio.vercel.app](https://mouadmaafi-portfolio.vercel.app)
+**Live:** [mouadmaafi-portfolio.vercel.app](https://mouad-maafi.vercel.app/)
 
 ---
 
@@ -118,67 +118,6 @@ Update content in `/src/data`:
 - **Bundle Size:** 214KB (gzipped)
 - **First Contentful Paint:** < 1.5s
 - **Time to Interactive:** < 3.5s
-
----
-
-## 🌐 Deployment
-
-### Quick Deployment Guide 🚀
-
-#### Step 1: Push to GitHub
-
-```bash
-# Using the automated script (Windows)
-.\setup-github.ps1 -GithubUsername YOUR_USERNAME
-
-# Or manually:
-git remote add origin https://github.com/YOUR_USERNAME/mon-portfolio.git
-git branch -M main
-git push -u origin main
-```
-
-#### Step 2: Deploy to Vercel
-
-**Option A: Via Vercel Dashboard (Easiest)**
-
-1. Go to [vercel.com](https://vercel.com)
-2. Sign up/Login with your GitHub account
-3. Click "Add New Project"
-4. Import your `mon-portfolio` repository
-5. Click "Deploy" (Vercel auto-detects Vite settings)
-6. Done! Your site will be live in ~2 minutes 🎉
-
-**Option B: Via Vercel CLI**
-
-```bash
-# Install Vercel CLI
-npm install -g vercel
-
-# Login to Vercel
-vercel login
-
-# Deploy
-vercel --prod
-```
-
-#### Automated Deployments
-
-After initial setup, use the deployment script:
-
-```bash
-# Windows PowerShell
-.\deploy.ps1 "Your commit message"
-
-# Or manually
-git add .
-git commit -m "Update portfolio"
-git push
-# Vercel auto-deploys on push!
-```
-
-### Other Platforms
-
-Works with Netlify, Firebase, GitHub Pages, or any static hosting.
 
 ---
 
